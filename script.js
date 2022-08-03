@@ -156,6 +156,8 @@ function enableCam(event) {
   const constraints = {
     facingMode: "user",
     video: true,
+    height: { ideal: 1920 },
+    width: { ideal: 1920 },
   };
 
   // Activate the webcam stream.
