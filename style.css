@@ -37,7 +37,7 @@ h1 {
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  align-items: center;
+  align-items: flex-start;
 }
 .left {
   width: 70%;
@@ -51,6 +51,9 @@ h1 {
   font-size: 16px;
 }
 
+#webcamButton {
+  float: left;
+}
 #speakButton {
   font-weight: 300;
   font-size: 12px;
@@ -63,7 +66,8 @@ button {
   font-size: 12px;
   text-transform: uppercase;
   padding: 16px;
-  margin: 0 auto;
+  // margin: 0 auto;
+  text-align: left;
   // border-radius: 5px;
 }
 
@@ -151,7 +155,7 @@ footer {
 .videoView {
   // display: flex;
   // flex-direction: column;
-  // align-items: center;
+  // align-items: left;
 
   -webkit-filter: hue-rotate(180deg);
   -moz-filter: hue-rotate(180deg);
@@ -162,6 +166,12 @@ footer {
   // width: 100%;
 }
 
+.button-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
 video {
   border-radius: 30px;
   // border: 5px solid black;
